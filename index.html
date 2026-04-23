@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Factions</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="theme-color" content="#15101a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192x192.png" />
+
+  <!-- Fonts: Silkscreen (titles), DM Sans (body), VT323 (data/stats) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=DM+Sans:wght@400;500;700&family=VT323&display=swap&subset=latin" media="print" onload="this.media='all'" />
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #15101a; margin: 0; height: 100vh; overflow: hidden; font-family: 'DM Sans', system-ui, sans-serif; }
+    /* Phaser game container sits below the DOM UI layer */
+    #game-root { position: fixed; inset: 0; z-index: 1; overflow: hidden; }
+    /* Prevent browser from handling touch gestures on the canvas (scroll, zoom, etc.) */
+    #game-root canvas { touch-action: none; }
+  </style>
+  <script type="module" crossorigin src="/tower_defence/assets/main-C0e86uHi.js"></script>
+  <link rel="modulepreload" crossorigin href="/tower_defence/assets/chunk-DnOH9YMa.js">
+  <link rel="modulepreload" crossorigin href="/tower_defence/assets/modulepreload-polyfill-CSRv37U6.js">
+  <link rel="modulepreload" crossorigin href="/tower_defence/assets/preload-helper-BVWUlqqq.js">
+  <link rel="modulepreload" crossorigin href="/tower_defence/assets/compat.module-DcwzC879.js">
+  <link rel="modulepreload" crossorigin href="/tower_defence/assets/Factions-CqDbhqu5.js">
+  <link rel="modulepreload" crossorigin href="/tower_defence/assets/GauntletMaps-CSYJGFzD.js">
+  <link rel="modulepreload" crossorigin href="/tower_defence/assets/LargeStructures-COF790SU.js">
+  <link rel="stylesheet" crossorigin href="/tower_defence/assets/main-B01ZlAwq.css">
+</head>
+<body>
+  <!-- Phaser game canvas container -->
+  <div id="game-root"></div>
+  <!-- DOM UI layer — renders above the Phaser canvas -->
+  <div id="ui-root"></div>
+</body>
+</html>

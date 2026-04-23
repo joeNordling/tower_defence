@@ -1,0 +1,30 @@
+{
+  "name": "Factions",
+  "short_name": "Factions",
+  "description": "A tower defence game with 12 asymmetric factions, heroes, and multiplayer.",
+  "start_url": "/tower_defence/",
+  "scope": "/tower_defence/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#15101a",
+  "theme_color": "#15101a",
+  "icons": [
+    {
+      "src": "icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["games"]
+}
